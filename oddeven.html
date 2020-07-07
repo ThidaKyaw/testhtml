@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function evenodd()
+            {
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                if(num1 % 2 == 0){
+                    result="This number is even number";
+                }
+                else{
+                    result="This number is odd number";
+                }
+                var result=document.getElementById('lblResult1').innerHTML=result;
+                if(num2 % 2 == 0){
+                    result="This number is even number";
+                }
+                else{
+                    result="This number is odd number";
+                }
+                var result=document.getElementById('lblResult2').innerHTML=result;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Number 1:</label><br>
+        <input type="number" id="number1"/><br>
+        <label>Number 2:</label><br>
+        <input type="number" id="number2"/><br>
+        <h3 id="lblResult1"></h3>
+        <h3 id="lblResult2"></h3>
+        <button onclick="evenodd()">Show result</button>
+    </body>
+</html>
